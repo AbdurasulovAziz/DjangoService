@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}FilePage{% endblock %}
+
+{% block content %}
+    <h1>FilePage</h1>
+    <p>Полное название файла: <b>{{ file.name }}</b></p>
+    <p>Расширение файла: <b>{{ file.extention }}</b></p>
+    <p>Размер файла: <b>{{ file.size }} мегабайт</b></p>
+    <p>Mimo type: <b>{{ file.mimo }}</b></p>
+
+    <a href="{% url 'home' %}">Home</a>
+
+{% endblock %}
